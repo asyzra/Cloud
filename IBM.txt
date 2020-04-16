@@ -1,0 +1,547 @@
+[
+    {
+        "id": "5c52e85c.cc2ed8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1c52d04f.fa4d7",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c1c34fd5.6b054",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "186222b1.749f2d",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ac902225.d0b17",
+        "type": "ui_base",
+        "z": 0,
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6614c76b.445198",
+        "type": "ui_tab",
+        "z": 0,
+        "name": "suhu",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cec3717d.7fb95",
+        "type": "ui_tab",
+        "z": 0,
+        "name": "suhu",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d92e6662.074978",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Enviroment",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c5312da7.8a8f6",
+        "type": "ui_group",
+        "z": 0,
+        "name": "suhu",
+        "tab": "6614c76b.445198",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1670b05f.25b43",
+        "type": "ui_group",
+        "z": 0,
+        "name": "lembap",
+        "tab": "cec3717d.7fb95",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9a2a16ea.b4a778",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "d92e6662.074978",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "48e3cf9d.747ae",
+        "type": "ibmiot in",
+        "z": "5c52e85c.cc2ed8",
+        "authentication": "boundService",
+        "apiKey": "",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "0800275e47d4",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": false,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "b31c594f.a7cd28"
+            ]
+        ]
+    },
+    {
+        "id": "b31c594f.a7cd28",
+        "type": "debug",
+        "z": "5c52e85c.cc2ed8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 230,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5d083658.98d798",
+        "type": "inject",
+        "z": "1c52d04f.fa4d7",
+        "name": "",
+        "topic": "",
+        "payload": "Normal",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "5a6855c2.70563c"
+            ]
+        ]
+    },
+    {
+        "id": "e78561a0.7377e",
+        "type": "inject",
+        "z": "1c52d04f.fa4d7",
+        "name": "",
+        "topic": "",
+        "payload": "Alert",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "5a6855c2.70563c"
+            ]
+        ]
+    },
+    {
+        "id": "5a6855c2.70563c",
+        "type": "function",
+        "z": "1c52d04f.fa4d7",
+        "name": "format message",
+        "func": "msg.payload = { \"a\" : { \"indicator\" : msg.payload}};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "26a53a3d.4b7ee6"
+            ]
+        ]
+    },
+    {
+        "id": "26a53a3d.4b7ee6",
+        "type": "json",
+        "z": "1c52d04f.fa4d7",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "c9de6f1b.544f"
+            ]
+        ]
+    },
+    {
+        "id": "c9de6f1b.544f",
+        "type": "ibmiot out",
+        "z": "1c52d04f.fa4d7",
+        "authentication": "boundService",
+        "apiKey": "",
+        "outputType": "cmd",
+        "deviceId": "0800275e47d4",
+        "deviceType": "raspberrypi",
+        "eventCommandType": "statusindicator",
+        "format": "json",
+        "data": "{}",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4e143d78.e86274",
+        "type": "ibmiot in",
+        "z": "c1c34fd5.6b054",
+        "authentication": "boundService",
+        "apiKey": "",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "senb0800275e47d4",
+        "applicationId": "",
+        "deviceType": "+senseHat",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "69e6238b.cb928c"
+            ]
+        ]
+    },
+    {
+        "id": "69e6238b.cb928c",
+        "type": "debug",
+        "z": "c1c34fd5.6b054",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b9fd1873.c6d9b8",
+        "type": "function",
+        "z": "186222b1.749f2d",
+        "name": "Suhu",
+        "func": "msg.payload=msg.payload.d.Data.Environment.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "794b002c.3c2a9"
+            ]
+        ]
+    },
+    {
+        "id": "b662e708.dc8178",
+        "type": "function",
+        "z": "186222b1.749f2d",
+        "name": "Kelembapan",
+        "func": "msg.payload=msg.payload.d.Data.Environment.humidity;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "83f3f1cb.a65f3"
+            ]
+        ]
+    },
+    {
+        "id": "9227cd2d.9a3e8",
+        "type": "function",
+        "z": "186222b1.749f2d",
+        "name": "Tekanan",
+        "func": "msg.payload=msg.payload.d.Data.Environment.pressure;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 360,
+        "wires": [
+            [
+                "1f2deb47.b04295"
+            ]
+        ]
+    },
+    {
+        "id": "794b002c.3c2a9",
+        "type": "ui_gauge",
+        "z": "186222b1.749f2d",
+        "name": "",
+        "group": "9a2a16ea.b4a778",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Suhu",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1f2deb47.b04295",
+        "type": "ui_gauge",
+        "z": "186222b1.749f2d",
+        "name": "",
+        "group": "9a2a16ea.b4a778",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Tekanan",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1600",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "83f3f1cb.a65f3",
+        "type": "ui_gauge",
+        "z": "186222b1.749f2d",
+        "name": "",
+        "group": "9a2a16ea.b4a778",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Kelembapan",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8d4f48fd.5189f8",
+        "type": "ibmiot in",
+        "z": "186222b1.749f2d",
+        "authentication": "boundService",
+        "apiKey": "",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "senb0800275e47d4",
+        "applicationId": "",
+        "deviceType": "+senseHat",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": true,
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "b9fd1873.c6d9b8",
+                "b662e708.dc8178",
+                "9227cd2d.9a3e8",
+                "fa5cd8d1.30f7c8"
+            ]
+        ]
+    },
+    {
+        "id": "fa5cd8d1.30f7c8",
+        "type": "debug",
+        "z": "186222b1.749f2d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 340,
+        "y": 500,
+        "wires": []
+    }
+]
